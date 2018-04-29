@@ -71,7 +71,7 @@ fun main(args: Array<out String>) {
         it.split(separator)[0] to it.split(separator)[1]
     }.toMap()
     listOf("CodeJob", "soho").map{"/bbs/$it"}.forEach { board ->
-        val pattern = "<a href=\"($board.*)\">(.*)</a>".toRegex()
+        val pattern = "<a href=\"($board/M.*)\">(.*)</a>".toRegex()
         val result = doScratchPtt(ptt, board)
         //println(result)
         pattern.findAll(result)
