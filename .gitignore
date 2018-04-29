@@ -4,5 +4,10 @@ build/
 .gradle/
 *.iml
 
+.classpath
+.project
+bin/
+.settings/
+
 .DS_Store
 out/
