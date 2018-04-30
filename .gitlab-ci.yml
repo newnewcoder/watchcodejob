@@ -8,7 +8,7 @@ cache:
   paths:
     - .gradle/wrapper
     - .gradle/caches
-    - cj_tmp
+    - cj_tmp.txt
 build:
   script:
     - ./gradlew run
